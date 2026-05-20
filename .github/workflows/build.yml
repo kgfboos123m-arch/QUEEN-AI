@@ -13,7 +13,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Build APK
-      run: bash ./gradlew assembleDebug --stacktrace
+      run: gradle assembleDebug --stacktrace
     - name: Upload APK
       uses: actions/upload-artifact@v3
       with:
